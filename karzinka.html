@@ -4,15 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
-    <title>GreenShop Landing Page</title>
+    <title>Document</title>
 </head>
 
 <body>
-
     <header class="header">
         <div class="container">
             <div class="header__container">
@@ -42,180 +41,132 @@
             </div>
         </div>
     </header>
-    <main class="main">
-        <section class="hero hero--bg-1">
-            <div class="container">
-                <div class="hero__container">
-                    <div class="hero__content" data-aos="zoom-in-right" data-aos-duration="1500">
-                        <p class="hero__subtitle">WELCOME TO GREENSHOP</p>
-                        <h1 class="hero__title">LET'S MAKE A BETTER <span class="hero__title-highlight">PLANET</span>
-                        </h1>
-                        <p class="hero__text">We are an online plant shop offering a wide range of cheap and trendy
-                            plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!</p>
-                        <a href="#" class="hero__btn button">SHOP NOW</a>
-                    </div>
-                    <div class="hero__image-side">
-                        <img src="./image/01.svg" alt="Big Plant" class="hero__img hero__img--main">
-                        <img src="./image/01.svg" alt="Small Plant" class="hero__img hero__img--secondary">
-                    </div>
-                    <div class="hero__slider-nav"></div>
-                </div>
+    <section class="cart">
+        <div class="container cart__container">
+
+            <div class="cart__breadcrumbs breadcrumbs">
+                <a href="#" class="breadcrumbs__link">Home</a> /
+                <a href="#" class="breadcrumbs__link">Shop</a> /
+                <span class="breadcrumbs__current">Shopping Cart</span>
             </div>
-        </section>
-        <section class="product-listing">
-            <div class="container">
-                <div class="product-listing__container">
-                    <aside class="product-listing__sidebar sidebar" data-aos="fade-down" data-aos-duration="1500">
-                        <div class="sidebar__block sidebar__block--categories">
-                            <h3 class="sidebar__title">Categories</h3>
-                            <ul class="sidebar__list">
-                                <li class="sidebar__item">
-                                    <a href="#" class="sidebar__link sidebar__link--active">
-                                        House Plants <span class="sidebar__count">(33)</span>
-                                    </a>
-                                </li>
-                                <li class="sidebar__item">
-                                    <a href="#" class="sidebar__link">
-                                        Potting Plants <span class="sidebar__count">(12)</span>
-                                    </a>
-                                </li>
-                                <li class="sidebar__item">
-                                    <a href="#" class="sidebar__link">
-                                        Seeds <span class="sidebar__count">(65)</span>
-                                    </a>
-                                </li>
-                                <li class="sidebar__item">
-                                    <a href="#" class="sidebar__link">
-                                        Small Plants <span class="sidebar__count">(39)</span>
-                                    </a>
-                                </li>
-                                <li class="sidebar__item">
-                                    <a href="#" class="sidebar__link">
-                                        Big Plants <span class="sidebar__count">(23)</span>
-                                    </a>
-                                </li>
-                                <li class="sidebar__item">
-                                    <a href="#" class="sidebar__link">
-                                        Succulents <span class="sidebar__count">(17)</span>
-                                    </a>
-                                </li>
-                                <li class="sidebar__item">
-                                    <a href="#" class="sidebar__link">
-                                        Terrariums <span class="sidebar__count">(19)</span>
-                                    </a>
-                                </li>
-                                <li class="sidebar__item">
-                                    <a href="#" class="sidebar__link">
-                                        Gardening <span class="sidebar__count">(13)</span>
-                                    </a>
-                                </li>
-                                <li class="sidebar__item">
-                                    <a href="#" class="sidebar__link">
-                                        Accessories <span class="sidebar__count">(18)</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
 
-                        <div class="sidebar__block sidebar__block--price-range">
-                            <h3 class="sidebar__title">Price Range</h3>
-                            <div class="sidebar__range-slider">
-                                <input type="range" class="sidebar__range-input" min="0" max="1500" value="700">
-                            </div>
-                            <p class="sidebar__price-info">
-                                Price: <span class="sidebar__price-min">$39</span> - <span
-                                    class="sidebar__price-max">$1230</span>
-                            </p>
-                            <button class="button sidebar__filter-button">Filter</button>
-                        </div>
+            <div class="cart__content">
 
-                        <div class="sidebar__block sidebar__block--size-filter">
-                            <h3 class="sidebar__title">Size</h3>
-                            <div class="size-options">
-                                <label class="size-option">
-                                    <input type="radio" name="plant-size" checked> Small <span
-                                        class="sidebar__count">(119)</span>
-                                </label>
-                                <label class="size-option">
-                                    <input type="radio" name="plant-size"> Medium <span
-                                        class="sidebar__count">(86)</span>
-                                </label>
-                                <label class="size-option">
-                                    <input type="radio" name="plant-size"> Large <span
-                                        class="sidebar__count">(32)</span>
-                                </label>
-                            </div>
-                        </div>
+                <div class="cart__products-list products-list">
+                    <table class="products-list__table table-cart">
+                        <thead class="table-cart__header">
+                            <tr>
+                                <th class="table-cart__col table-cart__col--products">Products</th>
+                                <th class="table-cart__col table-cart__col--price">Price</th>
+                                <th class="table-cart__col table-cart__col--quantity">Quantity</th>
+                                <th class="table-cart__col table-cart__col--total">Total</th>
+                                <th class="table-cart__col table-cart__col--remove"></th>
+                            </tr>
+                        </thead>
 
-                        <div class="sidebar__banner">
-                            <img src="./image/Super Sale.svg" alt="skidka 70%" class="sidebar__banner-imgage-one" data-aos="fade-down">
+                        <tbody class="table-cart__body">
 
-                            <div class="sidebar__banner-content">
-                                <h3 class="sidebar__banner-text">UP TO 70% OFF</h3>
-                            </div>
+                            <tr class="table-cart__item item-row">
+                                <td class="item-row__product product-info">
+                                    <img src="./image/04.svg" alt="Barberton Daisy"
+                                        class="product-info__image">
+                                    <div class="product-info__details">
+                                        <h3 class="product-info__name">Barberton Daisy</h3>
+                                        <p class="product-info__sku">SKU: 1995751877966</p>
+                                    </div>
+                                </td>
+                                <td class="item-row__price">$119.00</td>
+                                <td class="item-row__quantity quantity">
+                                    <button class="quantity__button quantity__button--minus">-</button>
+                                    <span class="quantity__input">2</span>
+                                    <button class="quantity__button quantity__button--plus">+</button>
+                                </td>
+                                <td class="item-row__total">$238.00</td>
+                                <td class="item-row__remove remove-btn"><i class="fa-solid fa-trash-can"></i></td>
+                            </tr>
 
-                            <img src="./image/image 12 (1).png" alt="Super Sale Plant"
-                                class="sidebar__banner-imgage-two">
-                        </div>
+                            <tr class="table-cart__item item-row">
+                                <td class="item-row__product product-info">
+                                    <img src="./image/02.svg" alt="Blushing Bromeliad"
+                                        class="product-info__image">
+                                    <div class="product-info__details">
+                                        <h3 class="product-info__name">Blushing Bromeliad</h3>
+                                        <p class="product-info__sku">SKU: 1995751877966</p>
+                                    </div>
+                                </td>
+                                <td class="item-row__price">$139.00</td>
+                                <td class="item-row__quantity quantity">
+                                    <button class="quantity__button quantity__button--minus">-</button>
+                                    <span class="quantity__input">6</span>
+                                    <button class="quantity__button quantity__button--plus">+</button>
+                                </td>
+                                <td class="item-row__total">$834.00</td>
+                                <td class="item-row__remove remove-btn"><i class="fa-solid fa-trash-can"></i></td>
+                            </tr>
 
-                    </aside>
+                            <tr class="table-cart__item item-row">
+                                <td class="item-row__product product-info">
+                                    <img src="./image/05.svg" alt="Aluminum Plant" class="product-info__image">
+                                    <div class="product-info__details">
 
-                    <div class="product-listing__main-content main-content">
 
-                        <div class="main-content__header">
+                                        <h3 class="product-info__name">Aluminum Plant</h3>
+                                        <p class="product-info__sku">SKU: 1995751877966</p>
+                                    </div>
+                                </td>
+                                <td class="item-row__price">$179.00</td>
+                                <td class="item-row__quantity quantity">
+                                    <button class="quantity__button quantity__button--minus">-</button>
+                                    <span class="quantity__input">9</span>
+                                    <button class="quantity__button quantity__button--plus">+</button>
+                                </td>
+                                <td class="item-row__total">$1,611.00</td>
+                                <td class="item-row__remove remove-btn"><i class="fa-solid fa-trash-can"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
-                            <div class="main-content__tabs">
-                                <button class="main-content__tab main-content__tab--active">All Plants</button>
-                                <button class="main-content__tab">New Arrivals</button>
-                                <button class="main-content__tab">Sale</button>
-                            </div>
+                <div class="cart__totals cart-totals">
+                    <h2 class="cart-totals__title">Cart Totals</h2>
 
-                            <div class="main-content__sort">
-                                <p class="main-content__sort-label">Short by:</p>
-                                <select class="main-content__sort-select">
-                                    <option value="default">Default sorting</option>
-                                    <option value="price-low">Price: Low to High</option>
-                                    <option value="price-high">Price: High to Low</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="main-content__grid product-grid">
-                        </div>
-
-                        <div class="main-content__pagination pagination">
-                            <a href="#" class="pagination__link pagination__link--active">1</a>
-                            <a href="#" class="pagination__link">2</a>
-                            <a href="#" class="pagination__link">3</a>
-                            <button class="pagination__next">
-                                Next <i class="fas fa-long-arrow-alt-right"></i>
-                            </button>
+                    <div class="cart-totals__coupon coupon-apply">
+                        <h4 class="coupon-apply__title">Coupon Apply</h4>
+                        <div class="coupon-apply__form">
+                            <input type="text" placeholder="Enter coupon code here..." class="coupon-apply__input">
+                            <button class="coupon-apply__btn">Apply</button>
                         </div>
                     </div>
 
+                    <div class="cart-totals__summary summary">
+                        <div class="summary__row">
+                            <span class="summary__label">Subtotal</span>
+                            <span class="summary__value">$2,683.00</span>
+                        </div>
+                        <div class="summary__row">
+                            <span class="summary__label">Coupon Discount</span>
+                            <span class="summary__value summary__value--discount">(-) 00.00</span>
+                        </div>
+                        <div class="summary__row summary__row--shipping">
+                            <span class="summary__label">Shiping</span>
+                            <span class="summary__value">$16.00</span>
+                            <a href="#" class="summary__shipping-link">View shipping change</a>
+                        </div>
+                        <div class="summary__row summary__row--total">
+                            <span class="summary__label">Total</span>
+                            <span class="summary__value summary__value--total">$2,699.00</span>
+                        </div>
+                    </div>
+
+                    <button class="cart-totals__checkout-btn">Proceed To Checkout</button>
+                    <a href="#" class="cart-totals__continue-link">Continue Shopping</a>
                 </div>
             </div>
-        </section>
-        <section class="plants" data-aos="zoom-out" data-aos-duration="800">
-        </section>
 
+        </div>
+    </section>
 
-
-        <section class="blog blog--four-cols" data-aos="zoom-out-down" data-aos-duration="800">
-            <div class="container">
-                <div class="blog__header">
-                    <h2 class="blog__title">Our Blog Posts</h2>
-                    <p class="blog__text">We are an online plant shop offering a wide range of cheap and trendy plants.
-                    </p>
-                </div>
-                <div class="blog__row-flex">
-                </div>
-
-            </div>
-        </section>
-    </main>
-
-    <footer>
+     <footer>
         <div class="container">
             <div class="footer__top">
                 <div class="footer__services">
@@ -354,12 +305,17 @@
 
 
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
     
     <script>
         AOS.init();
     </script>
+
+
     <script src="./js/main.js"></script>
+
+
+
 </body>
 
 </html>

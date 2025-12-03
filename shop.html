@@ -8,6 +8,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
+
     <title>GreenShop Landing Page</title>
 </head>
 
@@ -42,179 +43,141 @@
             </div>
         </div>
     </header>
-    <main class="main">
-        <section class="hero hero--bg-1">
-            <div class="container">
-                <div class="hero__container">
-                    <div class="hero__content" data-aos="zoom-in-right" data-aos-duration="1500">
-                        <p class="hero__subtitle">WELCOME TO GREENSHOP</p>
-                        <h1 class="hero__title">LET'S MAKE A BETTER <span class="hero__title-highlight">PLANET</span>
-                        </h1>
-                        <p class="hero__text">We are an online plant shop offering a wide range of cheap and trendy
-                            plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!</p>
-                        <a href="#" class="hero__btn button">SHOP NOW</a>
-                    </div>
-                    <div class="hero__image-side">
-                        <img src="./image/01.svg" alt="Big Plant" class="hero__img hero__img--main">
-                        <img src="./image/01.svg" alt="Small Plant" class="hero__img hero__img--secondary">
-                    </div>
-                    <div class="hero__slider-nav"></div>
+    <main>
+        <section class="product-detail">
+            <div class="container product-detail__container">
+                <div class="product-detail__breadcrumbs breadcrumbs">
+                    <a href="#" class="breadcrumbs__link">Home</a> / <a href="#" class="breadcrumbs__link">Shop</a>
                 </div>
-            </div>
-        </section>
-        <section class="product-listing">
-            <div class="container">
-                <div class="product-listing__container">
-                    <aside class="product-listing__sidebar sidebar" data-aos="fade-down" data-aos-duration="1500">
-                        <div class="sidebar__block sidebar__block--categories">
-                            <h3 class="sidebar__title">Categories</h3>
-                            <ul class="sidebar__list">
-                                <li class="sidebar__item">
-                                    <a href="#" class="sidebar__link sidebar__link--active">
-                                        House Plants <span class="sidebar__count">(33)</span>
-                                    </a>
-                                </li>
-                                <li class="sidebar__item">
-                                    <a href="#" class="sidebar__link">
-                                        Potting Plants <span class="sidebar__count">(12)</span>
-                                    </a>
-                                </li>
-                                <li class="sidebar__item">
-                                    <a href="#" class="sidebar__link">
-                                        Seeds <span class="sidebar__count">(65)</span>
-                                    </a>
-                                </li>
-                                <li class="sidebar__item">
-                                    <a href="#" class="sidebar__link">
-                                        Small Plants <span class="sidebar__count">(39)</span>
-                                    </a>
-                                </li>
-                                <li class="sidebar__item">
-                                    <a href="#" class="sidebar__link">
-                                        Big Plants <span class="sidebar__count">(23)</span>
-                                    </a>
-                                </li>
-                                <li class="sidebar__item">
-                                    <a href="#" class="sidebar__link">
-                                        Succulents <span class="sidebar__count">(17)</span>
-                                    </a>
-                                </li>
-                                <li class="sidebar__item">
-                                    <a href="#" class="sidebar__link">
-                                        Terrariums <span class="sidebar__count">(19)</span>
-                                    </a>
-                                </li>
-                                <li class="sidebar__item">
-                                    <a href="#" class="sidebar__link">
-                                        Gardening <span class="sidebar__count">(13)</span>
-                                    </a>
-                                </li>
-                                <li class="sidebar__item">
-                                    <a href="#" class="sidebar__link">
-                                        Accessories <span class="sidebar__count">(18)</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
 
-                        <div class="sidebar__block sidebar__block--price-range">
-                            <h3 class="sidebar__title">Price Range</h3>
-                            <div class="sidebar__range-slider">
-                                <input type="range" class="sidebar__range-input" min="0" max="1500" value="700">
+                <div class="product-detail__main">
+                    <div class="product-detail__gallery product-gallery">
+                        <div class="product-gallery__thumbnails" id="productThumbnails">
+                        </div>
+                        <div class="product-gallery__main-image-wrap">
+                            <img src="" alt="Asosiy mahsulot rasmi" class="product-gallery__main-image" id="mainImage" data-aos="zoom-in-down" data-aos-duration="1000">
+                        </div>
+                    </div>
+
+                    <div class="product-detail__info product-info">
+                        <h1 class="product-info__title" id="productTitle"></h1>
+                        <div class="product-info__rating-area rating-area">
+                            <span class="rating-area__price" id="productPrice"></span>
+                            <span class="rating-area__divider">|</span>
+                            <div class="rating-area__stars" id="productRatingStars">
                             </div>
-                            <p class="sidebar__price-info">
-                                Price: <span class="sidebar__price-min">$39</span> - <span
-                                    class="sidebar__price-max">$1230</span>
-                            </p>
-                            <button class="button sidebar__filter-button">Filter</button>
+                            <span class="rating-area__review-count" id="reviewCount"></span>
+                        </div>
+                        <div class="product-info__short-description short-description">
+                            <h3 class="short-description__title">Short Description:</h3>
+                            <p class="short-description__text" id="shortDescription"></p>
                         </div>
 
-                        <div class="sidebar__block sidebar__block--size-filter">
-                            <h3 class="sidebar__title">Size</h3>
-                            <div class="size-options">
-                                <label class="size-option">
-                                    <input type="radio" name="plant-size" checked> Small <span
-                                        class="sidebar__count">(119)</span>
-                                </label>
-                                <label class="size-option">
-                                    <input type="radio" name="plant-size"> Medium <span
-                                        class="sidebar__count">(86)</span>
-                                </label>
-                                <label class="size-option">
-                                    <input type="radio" name="plant-size"> Large <span
-                                        class="sidebar__count">(32)</span>
-                                </label>
+                        <div class="product-info__size-selection size-selection">
+                            <h3 class="size-selection__title">Size:</h3>
+                            <div class="size-selection__options" id="sizeOptions">
                             </div>
                         </div>
 
-                        <div class="sidebar__banner">
-                            <img src="./image/Super Sale.svg" alt="skidka 70%" class="sidebar__banner-imgage-one" data-aos="fade-down">
-
-                            <div class="sidebar__banner-content">
-                                <h3 class="sidebar__banner-text">UP TO 70% OFF</h3>
+                        <div class="product-info__actions actions">
+                            <div class="actions__quantity quantity">
+                                <button class="quantity__button quantity__button--minus" id="quantityMinus">-</button>
+                                <input type="text" value="1" class="quantity__input" min="1" id="quantityInput">
+                                <button class="quantity__button quantity__button--plus" id="quantityPlus">+</button>
                             </div>
-
-                            <img src="./image/image 12 (1).png" alt="Super Sale Plant"
-                                class="sidebar__banner-imgage-two">
-                        </div>
-
-                    </aside>
-
-                    <div class="product-listing__main-content main-content">
-
-                        <div class="main-content__header">
-
-                            <div class="main-content__tabs">
-                                <button class="main-content__tab main-content__tab--active">All Plants</button>
-                                <button class="main-content__tab">New Arrivals</button>
-                                <button class="main-content__tab">Sale</button>
-                            </div>
-
-                            <div class="main-content__sort">
-                                <p class="main-content__sort-label">Short by:</p>
-                                <select class="main-content__sort-select">
-                                    <option value="default">Default sorting</option>
-                                    <option value="price-low">Price: Low to High</option>
-                                    <option value="price-high">Price: High to Low</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="main-content__grid product-grid">
-                        </div>
-
-                        <div class="main-content__pagination pagination">
-                            <a href="#" class="pagination__link pagination__link--active">1</a>
-                            <a href="#" class="pagination__link">2</a>
-                            <a href="#" class="pagination__link">3</a>
-                            <button class="pagination__next">
-                                Next <i class="fas fa-long-arrow-alt-right"></i>
+                            <button class="actions__btn actions__btn--buy">BUY NOW</button>
+                            <button class="actions__btn actions__btn--cart">ADD TO CART</button>
+                            <button class="actions__btn actions__btn--wishlist" aria-label="Add to Wishlist"
+                                id="wishlistBtn">
+                                <i class="fa-regular fa-heart"></i>
                             </button>
                         </div>
+
+                        <div class="product-info__meta meta">
+                            <p class="meta__item"><span class="meta__label">SKU:</span> <span id="productSku"></span>
+                            </p>
+                            <p class="meta__item"><span class="meta__label">Categories:</span> <span
+                                    id="productCategories"></span></p>
+                            <p class="meta__item"><span class="meta__label">Tags:</span> <span id="productTags"></span>
+                            </p>
+                        </div>
+
+                        <div class="product-info__share share">
+                            <span class="share__label">Share this products:</span>
+                            <a href="#" class="share__link" aria-label="Facebook"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="share__link" aria-label="Twitter"><i
+                                    class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="share__link" aria-label="LinkedIn"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" class="share__link" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-detail__tabs product-tabs">
+                    <div class="product-tabs__nav">
+                        <button class="product-tabs__nav-item product-tabs__nav-item--active"
+                            data-tab="description">Product Description</button>
+                        <button class="product-tabs__nav-item" data-tab="reviews" id="reviewsTab">Reviews</button>
                     </div>
 
+                    <div class="product-tabs__content-wrap">
+                        <div class="product-tabs__content product-tabs__content--active" data-content="description">
+                            <p id="fullDescription"></p>
+                            <h4 class="product-tabs__section-title">Living Room:</h4>
+                            <p id="livingRoomDescription"></p>
+                        </div>
+
+                        <div class="product-tabs__content" data-content="reviews">
+                            <div class="reviews__list" id="reviewsList">
+                                <p class="reviews__empty-message">Hali sharhlar mavjud emas. Birinchi bo'lib sharh
+                                    qoldiring!</p>
+                            </div>
+
+                            <div class="reviews__form-section">
+                                <h4 class="reviews__form-title">Sharh qoldirish</h4>
+                                <form id="reviewForm" class="review-form">
+                                    <div class="form-group">
+                                        <label for="reviewName">Ismingiz:</label>
+                                        <input type="text" id="reviewName" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="reviewRating">Reyting (1-5):</label>
+                                        <select id="reviewRating" required>
+                                            <option value="5">⭐⭐⭐⭐⭐ (A'lo)</option>
+                                            <option value="4">⭐⭐⭐⭐ (Yaxshi)</option>
+                                            <option value="3">⭐⭐⭐ (O'rta)</option>
+                                            <option value="2">⭐⭐ (Yomon)</option>
+                                            <option value="1">⭐ (Juda yomon)</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="reviewText">Sharhingiz:</label>
+                                        <textarea id="reviewText" rows="5" required></textarea>
+                                    </div>
+
+                                    <button type="submit" class="review-form__submit-btn">Sharhni joylash</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="plants" data-aos="zoom-out" data-aos-duration="800">
-        </section>
 
-
-
-        <section class="blog blog--four-cols" data-aos="zoom-out-down" data-aos-duration="800">
-            <div class="container">
-                <div class="blog__header">
-                    <h2 class="blog__title">Our Blog Posts</h2>
-                    <p class="blog__text">We are an online plant shop offering a wide range of cheap and trendy plants.
-                    </p>
+                <div class="product-detail__related-products related-products">
+                    <h2 class="related-products__title">Related Products</h2>
+                    <div class="related-products__slider-container">
+                        <div class="related-products__list" id="relatedProductsList">
+                        </div>
+                    </div>
+                    <div class="related-products__pagination" id="relatedProductsPagination">
+                    </div>
                 </div>
-                <div class="blog__row-flex">
-                </div>
-
             </div>
         </section>
     </main>
-
     <footer>
         <div class="container">
             <div class="footer__top">
@@ -353,8 +316,7 @@
     </footer>
 
 
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
     
     <script>
         AOS.init();
